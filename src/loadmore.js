@@ -91,9 +91,9 @@ const LoadMoreBody = {
 
         el.$pullbody = true;
         body.dataset.isPull = '1';
-        body.dataset.offsetHeight = body.offsetHeight;
+        body.dataset.scrollHeight = body.scrollHeight;
         body.$pull = function () {
-            if ((body.clientHeight + window.pageYOffset >= body.offsetHeight) && body.dataset.isPull == '1') {
+            if ((body.clientHeight + window.pageYOffset >= body.scrollHeight) && body.dataset.isPull == '1') {
                 body.dataset.isPull = '0';
                 vnode.context[binding.expression]()
             }
@@ -104,9 +104,9 @@ const LoadMoreBody = {
     componentUpdated: function (el, binding, vnode) {
         if (el.$pullbody) {
             var body = document.documentElement;
-            if (parseInt(body.dataset.offsetHeight) != body.offsetHeight) { // hight changed
+            if (parseInt(body.dataset.scrollHeight) != body.scrollHeight) { // hight changed
                 body.dataset.isPull = '1';
-                body.dataset.offsetHeight = body.offsetHeight;
+                body.dataset.scrollHeight = body.scrollHeight;
             }
         }
     },
