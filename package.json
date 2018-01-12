@@ -1,0 +1,47 @@
+{
+  "name": "vue-scroll-loadmore",
+  "version": "0.1.2",
+  "description": "vue scroll loadmore",
+  "author": "Wang Huabin",
+  "license": "BSD 2-clause",
+  "main": "src/index.js",
+  "unpkg": "src/index.js",
+  "keywords": [
+    "vue",
+    "scroll",
+    "loadmore"
+  ],
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "dev": "webpack-dev-server --env.dev --open --hot",
+    "build": "webpack --env.production --progress --hide-modules",
+    "test": "eslint --env.dev"
+  },
+  "dependencies": {
+    "vue": "^2.5.13"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-component": "^0.10.1",
+    "babel-plugin-module-resolver": "^3.0.0",
+    "babel-preset-latest": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.15.0",
+    "file-loader": "^0.11.2",
+    "style-loader": "^0.18.2",
+    "vue-loader": "^12.2.2",
+    "vue-template-compiler": "^2.5.13",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
+  },
+  "bugs": {
+    "url": "https://github.com/hbicexp/vue-scroll-loadmore/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hbicexp/vue-scroll-loadmore.git"
+  }
+}

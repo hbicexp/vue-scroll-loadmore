@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>vue scroll loadmore</title>
+    <style>
+        
+html{
+  margin:0;
+  padding:0;
+}
+
+body {
+  margin:0;
+  padding:0px;
+  padding-left: 67.5%;
+  padding-right: 2.5%;
+}
+
+#app1,
+#app2,
+#app3
+{
+  padding:0px;
+  background-color: #eee;
+}
+
+#app1 {
+  position:absolute;
+  left:2.5%;
+  width: 30%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+#app2 {
+  position:absolute;
+  left: 35%;
+  width: 30%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+#app3 {
+  padding:0px;
+  background-color: #eee;
+}
+
+.item {
+  padding:10px;
+  background-color:transparent;
+  height: 958px;
+  margin: 10px;
+  border:1px solid #333;
+}
+
+.title {
+  padding:10px;
+  font-size:32px;
+  margin-right:20px;
+}
+    </style>
+</head>
+<body>
+    <div id="app1"></div>
+    <div id="app2"></div>
+    <div id="app3"></div>
+    <script src="../dist/sample.js"></script>
+</body>
+</html>
